@@ -53,7 +53,7 @@ Here's a complete [example](examples/simple/main.tf) of using this `terraform-aw
 
 | Name | Description | Type | Default | Required |
 |------|-------------|:----:|:-----:|:-----:|
-| add_sns_policy | Attach a policy that allows the notifications through to the SNS topic endpoint | string | `false` | no |
+| add_sns_policy | Attach a policy that allows the notifications through to the SNS topic endpoint | bool | `false` | no |
 | additional_endpoint_arns | Any alert endpoints, such as autoscaling, or app scaling endpoint arns that will respond to an alert | list | `<list>` | no |
 | create_dashboard | When true a dashboard that displays the statistics as a line graph will be created in CloudWatch | string | `true` | no |
 | log_group_name | The cloudtrail cloudwatch log group name | string | - | yes |
